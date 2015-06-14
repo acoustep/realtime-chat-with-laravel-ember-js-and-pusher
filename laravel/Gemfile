@@ -1,0 +1,4 @@
+source 'https://rubygems.org'
+
+gem 'firehose', '1.2'
+gem 'rainbows'
