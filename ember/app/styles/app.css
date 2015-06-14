@@ -1,0 +1,22 @@
+.message {
+  background-color: #f3f3f4;
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+.message:first-child {
+  margin-top: 0px;
+}
+
+#chat {
+  overflow: auto;
+  height: 340px;
+}
+
+.form-chat {
+  margin-top: 20px;
+}

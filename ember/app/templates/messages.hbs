@@ -1,0 +1,22 @@
+  <div class="row">    
+    <div class="col-xs-12">
+      <div id="chat">
+        {{#each message in arrangedContent}}
+          {{message-row message=message}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  <form {{action "send" on="submit"}} class="form-chat">
+    <div class="row">    
+      <div class="col-xs-2">
+        {{input placeholder="Name" classNames="form-control" value=name}}
+      </div>
+      <div class="col-xs-9">
+        {{input placeholder="Message" classNames="form-control" value=messageContent}}
+      </div>
+      <div class="col-xs-1 text-right">
+        <button {{bind-attr class=":btn :btn-primary isValid::disabled"}}>Send</button>
+      </div>
+    </div>
+  </form>
